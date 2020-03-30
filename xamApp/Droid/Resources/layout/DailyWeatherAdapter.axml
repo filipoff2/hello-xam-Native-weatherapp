@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="DayLabel"
+        android:id="@+id/tvDay" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTempNight"
+        android:minEms="2"
+        android:gravity="center"
+        android:layout_marginLeft="12dp"
+        android:layout_alignParentRight="true"
+        android:textColor="@android:color/holo_green_dark" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvTempDay"
+        android:gravity="center"
+        android:minEms="2"
+        android:layout_toLeftOf="@+id/tvTempNight"
+        android:textColor="@android:color/holo_green_dark" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/icon" />
+</RelativeLayout>

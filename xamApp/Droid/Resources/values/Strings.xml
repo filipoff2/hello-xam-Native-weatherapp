@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="hello">Weather App</string>
+	<string name="app_name">WeatherApp.Droid</string>
+  <string name="celsius">&#x2103;</string>
+</resources>

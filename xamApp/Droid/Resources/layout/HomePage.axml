@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="64dp">
+    <WeatherApp.Droid.Utility.RotateImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_margin="16dp"
+        android:src="@drawable/checked" />
+    <EditText
+        android:id="@+id/etCitySearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/et_shape"
+        android:layout_marginBottom="8dp"
+        android:hint="City"
+        android:contentDescription="SearchTextField" />
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_green_dark"
+        android:contentDescription="SearchButton" />
+</LinearLayout>

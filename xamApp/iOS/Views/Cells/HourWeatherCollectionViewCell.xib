@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HourWeatherCollectionViewCell" id="cZE-iV-UFb" customClass="HourWeatherCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="720">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="16"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="0.84999999999999998" height="0.65000000000000002"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="853">
+                        <rect key="frame" x="0.0" y="64" width="80" height="16"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="0.90000000000000002"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="IzQ-S1-n4Y">
+                        <rect key="frame" x="16" y="16" width="48" height="48"/>
+                        <rect key="contentStretch" x="0.0" y="0.0" width="1" height="1"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="IzQ-S1-n4Y" secondAttribute="height" multiplier="1:1" id="s0V-AS-C2x"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="853" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" id="BWg-BH-45L"/>
+                <constraint firstAttribute="bottom" secondItem="853" secondAttribute="bottom" id="EtZ-nF-LX0"/>
+                <constraint firstAttribute="trailing" secondItem="853" secondAttribute="trailing" id="ZMb-mc-Icv"/>
+                <constraint firstAttribute="trailing" secondItem="720" secondAttribute="trailing" id="dEc-vr-plf"/>
+                <constraint firstItem="853" firstAttribute="top" secondItem="IzQ-S1-n4Y" secondAttribute="bottom" id="gXE-ax-53Z"/>
+                <constraint firstItem="720" firstAttribute="leading" secondItem="cZE-iV-UFb" secondAttribute="leading" id="kSr-Ab-9Xv"/>
+                <constraint firstItem="720" firstAttribute="top" secondItem="cZE-iV-UFb" secondAttribute="top" id="lnj-u3-4LU"/>
+                <constraint firstItem="IzQ-S1-n4Y" firstAttribute="centerX" secondItem="cZE-iV-UFb" secondAttribute="centerX" id="uVx-gn-5Wo"/>
+                <constraint firstItem="IzQ-S1-n4Y" firstAttribute="top" secondItem="720" secondAttribute="bottom" id="zOl-7E-TZC"/>
+            </constraints>
+            <connections>
+                <outlet property="HourLabel" destination="720" id="name-outlet-720"/>
+                <outlet property="IconImageView" destination="IzQ-S1-n4Y" id="name-outlet-IzQ-S1-n4Y"/>
+                <outlet property="TemperatureLabel" destination="853" id="name-outlet-853"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Icon" width="60" height="60"/>
+    </resources>
+</document>
