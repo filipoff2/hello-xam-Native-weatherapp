@@ -1,0 +1,40 @@
+
+//works but not clean!!
+public AuthorizationService(
+            IPhotoClient photoClient,
+            IClientConfiguration configuration,
+            IMvxNavigationService navigationService,
+            UserInfo userInfo,
+            IFingerprint fingerprint
+            )
+        {
+            _photoClient = photoClient;
+            _configuration = configuration;
+            _navigationService = navigationService;
+            _userInfo = userInfo;
+            
+            _fingerprint = fingerprint;
+            
+        }
+
+
+
+//clean but don't work
+public AuthorizationService(
+            IPhotoClient photoClient,
+            IClientConfiguration configuration,
+            IMvxNavigationService navigationService,
+            UserInfo userInfo,
+            
+            )
+        {
+            _photoClient = photoClient;
+            _configuration = configuration;
+            _navigationService = navigationService;
+            _userInfo = userInfo;
+            _fingerprint = CrossFingerprint.Current;
+        }
+        
+        
+        
+        
