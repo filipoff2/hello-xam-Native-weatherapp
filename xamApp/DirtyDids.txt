@@ -1,5 +1,5 @@
 
-//works but not clean!!
+//clean but don't work
 public AuthorizationService(
             IPhotoClient photoClient,
             IClientConfiguration configuration,
@@ -18,8 +18,7 @@ public AuthorizationService(
         }
 
 
-
-//clean but don't work
+//works but not clean!!
 public AuthorizationService(
             IPhotoClient photoClient,
             IClientConfiguration configuration,
